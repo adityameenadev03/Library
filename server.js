@@ -6,12 +6,7 @@ const cors = require('cors');
 
 const app = express()
 require('dotenv').config()
-mongoose.set('strictQuery', true);
-// app.use(express.static(path.join(__dirname,'./frontend/build')))
 
-// app.get('*', (req,res)=> {
-//   res.sendFile(path.join(__dirname,'./frontend/build/index.html'))
-// })
 
 const booksRoutes = require('./routes/books')
 const userRoutes = require('./routes/user')
