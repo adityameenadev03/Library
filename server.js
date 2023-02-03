@@ -6,7 +6,7 @@ const cors = require('cors');
 
 const app = express()
 require('dotenv').config()
-
+mongoose.set('strictQuery', true);
 app.use(express.static(path.join(__dirname,'./frontend/build')))
 
 app.get('*', (req,res)=> {
